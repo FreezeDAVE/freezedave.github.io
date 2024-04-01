@@ -1,0 +1,62 @@
+/* Light Theme */
+@media (prefers-color-scheme: light) {
+    html {
+        color: #303030;
+        background-color: #ffffff;
+    }
+    aside {
+        background-color: #dfdfdf;
+        border-right: medium solid #bfbfbf;
+    }
+    a:link {
+        color: #303030;
+    }
+}
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+    html {
+        color: #ffffff;
+        background-color: #303030;
+    }
+    aside { 
+        background-color: #505050;
+        border-right: medium solid #101010;
+    }
+    a:link {
+        color: #ffffff;
+    }
+}
+main {
+    font-family: 'Sitka Text';
+    font-size: 130%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+aside {
+    height: 98%;
+    width: 13%;
+    padding-left: 2%;
+    padding-top: 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: 'Candara';
+    font-size: 120%;
+}
+aside a:link {
+    text-decoration: none;
+}
+summary {
+    list-style-type: '> ';
+    font-weight: bold;
+}
+details[open] > summary {
+    list-style-type: '˅ ';
+    font-weight: bold;
+}
+details[open] > .aside-details {
+    padding-left: 10%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Segoe UI';
+}
