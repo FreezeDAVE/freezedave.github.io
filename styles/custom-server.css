@@ -43,6 +43,9 @@ aside {
     font-family: 'Candara';
     font-size: 120%;
 }
+a:hover {
+    color: #5d74f8;
+}
 aside a:link {
     text-decoration: none;
 }
