@@ -1,5 +1,5 @@
 /* Light Theme */
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: no-preference),(prefers-color-scheme: light) {
     html {
         color: #303030;
         background-color: #ffffff;
@@ -7,6 +7,9 @@
     aside {
         background-color: #dfdfdf;
         border-right: medium solid #bfbfbf;
+    }
+    footer {
+        border-top: thin solid #bfbfbf;
     }
     a:link {
         color: #303030;
@@ -21,6 +24,9 @@
     aside { 
         background-color: #505050;
         border-right: medium solid #101010;
+    }
+    footer {
+        border-top: thin solid #101010;
     }
     a:link {
         color: #ffffff;
@@ -42,6 +48,14 @@ aside {
     left: 0;
     font-family: 'Candara';
     font-size: 120%;
+}
+footer {
+    height: 6%;
+    width: 14%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0.5%;
 }
 a:hover {
     color: #5d74f8;
