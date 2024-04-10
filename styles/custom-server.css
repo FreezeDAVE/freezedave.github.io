@@ -4,14 +4,23 @@
         color: #303030;
         background-color: #ffffff;
     }
-    aside {
+    header, aside, footer {
         background-color: #dfdfdf;
         border-right: medium solid #bfbfbf;
+    }
+    header {
+        border-bottom: thin solid #bfbfbf;
     }
     footer {
         border-top: thin solid #bfbfbf;
     }
+    footer img {
+        border: thin solid #bfbfbf;
+    }
     a:link {
+        color: #303030;
+    }
+    a:visited {
         color: #303030;
     }
 }
@@ -21,14 +30,23 @@
         color: #ffffff;
         background-color: #303030;
     }
-    aside { 
+    header, aside, footer {
         background-color: #505050;
         border-right: medium solid #101010;
+    }
+    header {
+        border-bottom: thin solid #101010;
     }
     footer {
         border-top: thin solid #101010;
     }
+    footer img {
+        border: thin solid #101010;
+    }
     a:link {
+        color: #ffffff;
+    }
+    a:visited {
         color: #ffffff;
     }
 }
@@ -38,30 +56,52 @@ main {
     margin-left: 25%;
     margin-right: 25%;
 }
-aside {
-    height: 98%;
-    width: 13%;
-    padding-left: 2%;
-    padding-top: 2%;
+header {
+    height: 8%;
+    width: 15%;
+    padding-top: 1%;
     position: fixed;
     top: 0;
     left: 0;
+    font-size: 35px;
+    font-family: 'Segoe UI';
+    text-align: center;
+    z-index: 2;
+}
+aside {
+    height: 76%;
+    width: 13%;
+    padding: 1%;
+    position: fixed;
+    top: 10%;
+    left: 0;
     font-family: 'Candara';
     font-size: 120%;
+    z-index: 1;
+    overflow: auto;
 }
 footer {
-    height: 6%;
+    height: 8%;
     width: 14%;
     position: fixed;
     bottom: 0;
     left: 0;
     padding: 0.5%;
+    font-size: small;
+    z-index: 2;
+    overflow: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Segoe UI';
+}
+footer img {
+    border-radius: 15%;
+}
+header a:link, aside a:link, footer a:link {
+    text-decoration: none;
 }
 a:hover {
     color: #5d74f8;
-}
-aside a:link {
-    text-decoration: none;
 }
 summary {
     list-style-type: '> ';
@@ -73,7 +113,4 @@ details[open] > summary {
 }
 details[open] > .aside-details {
     padding-left: 10%;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Segoe UI';
 }
