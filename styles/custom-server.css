@@ -78,7 +78,7 @@ aside {
     font-family: 'Candara';
     font-size: 120%;
     z-index: 1;
-    overflow: auto;
+    overflow-y: auto;
 }
 footer {
     height: 8%;
@@ -89,7 +89,7 @@ footer {
     padding: 0.5%;
     font-size: small;
     z-index: 2;
-    overflow: auto;
+    overflow-y: auto;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Segoe UI';
