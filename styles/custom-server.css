@@ -1,5 +1,5 @@
 /* Light Theme */
-@media (prefers-color-scheme: no-preference),(prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {
     html {
         color: #303030;
         background-color: #ffffff;
